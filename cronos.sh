@@ -11,7 +11,7 @@ doy_cd=`echo "scale=2; 365 - $doy" | bc` #DayOfYear.CountDown
 noy=$(date +%Y) #NumberOfYear (00-99)
 dom=$(date +%d) #DayOfMonth (1-31)
 now=$(date +%U) #NumberOfWeek (1-52)
-dow=$(date +%w) #DayOfWeek (1-7)
+dow=$(date +%a) #DayOfWeek (1-7)
 #STAGE II
 dim=`echo "scale=0; $hrs * 60 + $min" | bc` #DayInMinutes
 dis=`echo "scale=0; $dim * 60 + $sec" | bc` #DayInSeconds
