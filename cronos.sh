@@ -18,3 +18,12 @@ dis=`echo "scale=0; $dim * 60 + $sec" | bc` #DayInSeconds
 did=`echo "scale=2; $dis / 240" | bc` #DayInDegree
 did_cd=`echo "scale=2; 360 - $did" | bc` #DayInDegree.CountDown
 #STAGE III
+CRONOS=$doy$dow$dom$mon$noy
+#STAGE IV
+#STAGE V
+read -p "Enter Password: " INPUT
+if [ "$INPUT" = "CRONOS" ]; then
+clear
+else
+exit 1
+fi
